@@ -7,22 +7,24 @@ export default class Home extends Component {
 
     componentDidMount() {
 
-        axios.get('user').then(
-            res => {
-                this.setState({
-                    user: res.data
-                })
-            },
-            err => {
-                console.log(err);
-            }
-        );
+        // axios.get('user').then(
+        //     res => {
+        //         this.setState({
+        //             user: response.data
+        //         })
+        //     },
+        //     err => {
+        //         console.log(err);
+        //     }
+        // );
+
+      
     }
     
     render() {
-        if(this.state.user) {
+        if(localStorage.getItem.nric != null) {
             return (
-                <h2>Hi {this.state.user.first_name} { this.state.user.last_name}</h2>
+                <h2>Hi {localStorage.getItem.firstName} { localStorage.getItem.lastName}</h2>
             )
         }
         
