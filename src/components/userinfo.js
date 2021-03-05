@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { TextField } from '@material-ui/core/styles';
 import axios from 'axios';
 
 export default function userinfo() {
@@ -36,9 +36,11 @@ export default function userinfo() {
   }, []);
 
   return (
+      <div>
         {items.map((row) =>  (<div>
             <TextField value={row.username}/>
-            <TextField value={row.firstname}/>
+            <TextField value={row.firstName}/>
         </div>))};
+      </div>
   );
 }
