@@ -38,6 +38,13 @@ export default function UserInfo() {
   console.log(items.firstName);
 
   return (
-    <div>{items.firstName}</div>      
+    <div>
+        <TextField label="First Name" value={items.firstName}/>
+        <TextField label="Last Name" value={items.lastName}/>
+        <TextField label="NRIC" value={items.nric}/>
+        <TextField label="Address" value={items.address}/>
+        <TextField label="Phone Number" value={items.phoneNumber}/>
+        <TextField label="Email Address" value={items.email}/>
+    </div>      
   );
 }
