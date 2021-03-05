@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { TextField } from '@material-ui/core/styles';
+import { TextField } from '@material-ui/core';
 import axios from 'axios';
 
 export default function UserInfo() {
@@ -39,12 +39,14 @@ export default function UserInfo() {
 
   return (
     <div>
-        <TextField label="First Name" value={items.firstName}/>
-        <TextField label="Last Name" value={items.lastName}/>
-        <TextField label="NRIC" value={items.nric}/>
-        <TextField label="Address" value={items.address}/>
-        <TextField label="Phone Number" value={items.phoneNumber}/>
-        <TextField label="Email Address" value={items.email}/>
+        <TextField label="" value={items.firstName}/>
+        <TextField label="" value={items.lastName}/>
+        <br/>
+        <TextField label="" value={items.nric}/>
+        <TextField label="A" value={items.address}/>
+        <br/>
+        <TextField label="" value={items.phoneNumber}/>
+        <TextField label="" value={items.email}/>
     </div>      
   );
 }
