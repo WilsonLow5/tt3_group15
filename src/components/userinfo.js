@@ -18,6 +18,7 @@ export default function UserInfo() {
         };
         await axios.post(url, article, { headers })
             .then((response) => {
+                    console.log(response)
                     setItems(response.data);
                     setLoading(false);
                     
