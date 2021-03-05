@@ -18,6 +18,7 @@ function App() {
         <div className="auth-inner">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/userinfo" component={UserInfo} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/history" component={History} />
