@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { TextField } from '@material-ui/core/styles';
+import { TextField } from '@material-ui/core';
 import axios from 'axios';
 
 export default function UserInfo() {
