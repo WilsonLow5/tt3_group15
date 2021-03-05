@@ -7,7 +7,6 @@ export default class Nav extends Component {
             <nav className="navbar navbar-expand navbar-light fixed-top">
                 <div className="container">
                 <Link className="navbar-brand" to={"/"}>Home</Link>
-                <Link className="navbar-brand" to={"/userinfo"}>User Info</Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
@@ -18,6 +17,9 @@ export default class Nav extends Component {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to={"/history"}>History</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to={"/UserInfo"}>User Info</Link>
                     </li>
                     </ul>
                 </div>

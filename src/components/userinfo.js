@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 
-export default function userinfo() {
+export default function UserInfo() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -35,10 +35,9 @@ export default function userinfo() {
     };
   }, []);
 
+  console.log(items.firstName);
+
   return (
-        {items.map((row) =>  (<div>
-            <TextField value={row.username}/>
-            <TextField value={row.firstname}/>
-        </div>))};
+    <div>{items.firstName}</div>      
   );
 }

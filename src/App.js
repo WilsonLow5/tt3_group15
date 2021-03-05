@@ -7,6 +7,7 @@ import Login from "./components/login.component";
 import History from "./components/viewHistory";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Register from "./components/register.component";
+import UserInfo from "./components/userinfo";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/history" component={History} />
+            <Route exact path="/userinfo" component={UserInfo} />
           </Switch>
         </div>
       </div>
