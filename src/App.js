@@ -7,7 +7,7 @@ import ViewBalance from "./components/viewBalance"
 import Login from "./components/login.component";
 import History from "./components/viewHistory";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Register from "./components/register.component";
+
 import UserInfo from "./components/userinfo";
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
         <div className="auth-inner">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/userinfo" component={UserInfo} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/viewBalance" component={ViewBalance} />
@@ -30,7 +29,6 @@ function App() {
       </div>
      </div>
     </BrowserRouter>
-   
   );
 }
 
